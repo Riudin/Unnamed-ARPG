@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://fmfj7geftslv"]
+
+[ext_resource type="Script" uid="uid://bc4x8yde053d8" path="res://features/root/root_context.gd" id="1_vrd1y"]
+[ext_resource type="PackedScene" uid="uid://d1u4arys4ya5" path="res://features/main_menu/main_menu_context.tscn" id="2_rruap"]
+[ext_resource type="PackedScene" uid="uid://baovuhiaetjhn" path="res://features/options_menu/options_menu_context.tscn" id="3_ht221"]
+[ext_resource type="PackedScene" uid="uid://vuy315ukca6j" path="res://features/game/game_context.tscn" id="3_ttk5s"]
+
+[node name="RootContext" type="Node2D" unique_id=156209466]
+script = ExtResource("1_vrd1y")
+main_menu_context_scene = ExtResource("2_rruap")
+options_menu_context_scene = ExtResource("3_ht221")
+game_context_scene = ExtResource("3_ttk5s")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2084824304]
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=181907231]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Root Context"

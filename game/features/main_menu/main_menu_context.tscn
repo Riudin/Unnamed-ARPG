@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://d1u4arys4ya5"]
+
+[ext_resource type="Script" uid="uid://cwrrdge8jcvke" path="res://features/main_menu/main_menu_context.gd" id="1_2xim2"]
+
+[node name="MainMenuContext" type="Node2D" unique_id=945117854]
+script = ExtResource("1_2xim2")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=75414899]
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=510583107]
+offset_top = 32.0
+offset_right = 101.0
+offset_bottom = 55.0
+text = "Main Menu Context"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer" unique_id=1126248901]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -48.0
+offset_top = -20.0
+offset_right = 48.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="StartGame" type="Button" parent="CanvasLayer/VBoxContainer" unique_id=1668407532]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Start Game"
+
+[node name="Options" type="Button" parent="CanvasLayer/VBoxContainer" unique_id=682116819]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Options"
+
+[node name="Quit" type="Button" parent="CanvasLayer/VBoxContainer" unique_id=168726188]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Quit"

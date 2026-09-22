@@ -30,7 +30,8 @@ func bind_dependencies() -> void:
 func setup() -> void:
 	# At this point we have ALL dependencies resolved and we can do any
 	# setup that requires these, e.g. connect signals and use factories, etc.
-	mount_main_menu()
+	mount_game()
+	#mount_main_menu()
 
 
 func mount_main_menu() -> void:

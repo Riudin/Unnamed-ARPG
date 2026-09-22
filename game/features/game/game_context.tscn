@@ -1,9 +1,21 @@
 [gd_scene format=3 uid="uid://vuy315ukca6j"]
 
 [ext_resource type="Script" uid="uid://cvpuwe1s7fkpy" path="res://features/game/game_context.gd" id="1_bp3ee"]
+[ext_resource type="PackedScene" uid="uid://cko33b4d54yx4" path="res://entities/characters/player/player.tscn" id="2_e6fin"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_xf5y8"]
 
 [node name="GameContext" type="Node2D" unique_id=1013453582]
 script = ExtResource("1_bp3ee")
+_player_scene = ExtResource("2_e6fin")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1611502553]
+modulate = Color(0.12436601, 0.5564099, 0.25238034, 1)
+offset_left = -47.0
+offset_top = -22.0
+offset_right = 1273.0
+offset_bottom = 751.0
+texture = SubResource("CanvasTexture_xf5y8")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=807730311]
 

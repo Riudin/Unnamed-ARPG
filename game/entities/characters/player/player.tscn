@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://cko33b4d54yx4"]
+
+[ext_resource type="Texture2D" uid="uid://csoxr1l2jxb86" path="res://assets/testing/back_foot.png" id="1_a3s12"]
+[ext_resource type="Script" uid="uid://c6bpu10udqvr5" path="res://entities/characters/player/player.gd" id="1_m0gj2"]
+[ext_resource type="Texture2D" uid="uid://dcivblvyqbw1w" path="res://assets/testing/front_foot.png" id="2_m0gj2"]
+[ext_resource type="Texture2D" uid="uid://b3q2biki6jyga" path="res://assets/testing/back_hand.png" id="3_0d5hj"]
+[ext_resource type="Texture2D" uid="uid://ct8h6pva4me71" path="res://assets/testing/body.png" id="4_mx21o"]
+[ext_resource type="Texture2D" uid="uid://d2w0ke72skp5k" path="res://assets/testing/front_hand.png" id="5_sybl7"]
+[ext_resource type="Texture2D" uid="uid://bbn4cj0uev0aw" path="res://assets/testing/head.png" id="6_5otfs"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_w5ybq"]
+radius = 6.0
+
+[node name="Player" type="CharacterBody2D" unique_id=1115547765]
+script = ExtResource("1_m0gj2")
+
+[node name="Visuals" type="Node2D" parent="." unique_id=421776401]
+position = Vector2(0, -14)
+
+[node name="BackFoot" type="Sprite2D" parent="Visuals" unique_id=2065639510]
+texture = ExtResource("1_a3s12")
+
+[node name="FrontFoot" type="Sprite2D" parent="Visuals" unique_id=1093194829]
+texture = ExtResource("2_m0gj2")
+
+[node name="BackHand" type="Sprite2D" parent="Visuals" unique_id=266627842]
+texture = ExtResource("3_0d5hj")
+
+[node name="Body" type="Sprite2D" parent="Visuals" unique_id=733767722]
+texture = ExtResource("4_mx21o")
+
+[node name="FrontHand" type="Sprite2D" parent="Visuals" unique_id=2055601552]
+texture = ExtResource("5_sybl7")
+
+[node name="Head" type="Sprite2D" parent="Visuals" unique_id=450286925]
+texture = ExtResource("6_5otfs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=275437248]
+position = Vector2(0, -2)
+shape = SubResource("CircleShape2D_w5ybq")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=926939749]
